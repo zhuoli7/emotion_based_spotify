@@ -4,10 +4,10 @@ import cv2.face
 import glob
 import random
 
-emotions = ["neutral", "anger", "contempt", "disgust", "fear", "happy", "sadness", "surprise"] 
+emotions = ["neutral", "anger", "fear", "happy", "sadness", "surprise"] 
 fishface = cv2.face.createFisherFaceRecognizer() 
-eigenface = cv2.face.createEigenFaceRecognizer()
-LBPface = cv2.face.createLBPHFaceRecognizer()
+#eigenface = cv2.face.createEigenFaceRecognizer()
+#LBPface = cv2.face.createLBPHFaceRecognizer()
 
 def get_files(emo): 
     trai_set = glob.glob("dataset\\%s\\*" %emo)
@@ -21,6 +21,8 @@ def make_sets():
         for i in trai_img:
             image = cv2.imread(i)
             gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+            clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
+            gray = clahe.apply(gray)
             trai_data.append(gray)
             trai_label.append(emotions.index(e))
 
@@ -30,15 +32,15 @@ def recognition():
     
     trai_data, trai_label = make_sets()
     
-    face_img = cv2.imread('face_extracted.jpg') 
-    face_gray = cv2.cvtColor(face_img, cv2.COLOR_BGR2GRAY)
+    #face_img = cv2.imread('face_extracted.jpg') 
+    #face_gray = cv2.cvtColor(face_img, cv2.COLOR_BGR2GRAY)
     
     fishface.train(trai_data, np.asarray(trai_label))
     fishface.save('fishface_mode.XML')
-    eigenface.train(trai_data, np.asarray(trai_label))
-    eigenface.save('eigenface_mode.XML')
-    LBPface.train(trai_data, np.asarray(trai_label))
-    LBPface.save('LBPface_mode.XML')
+    #eigenface.train(trai_data, np.asarray(trai_label))
+    #eigenface.save('eigenface_mode.XML')
+    #LBPface.train(trai_data, np.asarray(trai_label))
+    #LBPface.save('LBPface_mode.XML')
     '''
     fishface.load('fishface_mode.XML')
 
