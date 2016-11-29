@@ -1,0 +1,12 @@
+usersData({
+ "users": [
+   {
+     "name": "pavito",
+     "pass": '1234'
+   },
+   {
+     "name": "tiger",
+     "pass": '1234'
+   }
+ ]})
+ 

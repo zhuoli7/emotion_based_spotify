@@ -1,0 +1,10 @@
+var array = {
+  "user1": [
+    "pavito",
+    1234
+  ],
+  "user2": [
+    "tiger",
+    5678
+  ]
+}
