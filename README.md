@@ -1,4 +1,4 @@
-# emotion_based_spotify
+# Emotion_Based_Spotify
 
 ####EC601 project
 
