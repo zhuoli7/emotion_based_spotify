@@ -1,8 +1,9 @@
-# emotion_based_spotify
+# Emotion_Based_Spotify
 
 ####EC601 project
 
 Our Emotion-based Spotify project is a web app developed to analyze facial emotion and return the playlist to user. 
+It can recognize the following emotion: happy, sad, fear, anger, surprise and neutral.
 
 ####Our project highlight
 
