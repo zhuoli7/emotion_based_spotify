@@ -22,17 +22,16 @@ It can recognize the following emotions: happy, sad, fear, angry, surprise and n
 
 ####Build Instructions
 
-* The following software required:
-    Python 3
-    OpenCV 3.1
-   
- * To run Python program for recognition in local, the following files in "python code" folder are required:
-    emotion_recognition_v1.1.py
-    fishface_mode.XML
-    haarcascade_frontalface_alt.xml
-    haarcascade_frontalface_alt2.xml
-    haarcascade_frontalface_alt_tree.xml
-    haarcascade_frontalface_default.xml
+* The following software is required:
+   - Python 3
+   - OpenCV 3.1
+* To run Python program for recognition in local, the following files in "python code" folder are required:
+   - emotion_recognition_v1.1.py
+   - fishface_mode.XML
+   - haarcascade_frontalface_alt.xml
+   - haarcascade_frontalface_alt2.xml
+   - haarcascade_frontalface_alt_tree.xml
+   - haarcascade_frontalface_default.xml
 
 
 
