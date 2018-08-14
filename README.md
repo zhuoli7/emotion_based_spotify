@@ -1,18 +1,18 @@
 #  Emotion_Based_Spotify
 
-##EC601 project
+## Project Description
 
 Our Emotion-based Spotify project is a web app developed to analyze facial emotion and return a Spotify playlist to user. 
 It can recognize the following emotions: happy, sad, fear, angry, surprise and neutral.
 
-##Our project highlight
+## Project Highlight
 
 * Website front-end design and back-end setup
 * Dynamic web hosting
 * Face recognition with Opencv
 * MySQL Databse
 
-##User Manual
+## User Manual
 
 * Open our website in Firefox:http://35.164.157.215
 * Click"Try it out" in our homepage
@@ -20,7 +20,7 @@ It can recognize the following emotions: happy, sad, fear, angry, surprise and n
 * Take a selfie and you could immediately see the preview on the side
 * Use the "Find playlist" button to get the playlist we find for you
 
-##Build Instructions
+## Build Instructions
 
 * The following software is required:
    - Python 3
